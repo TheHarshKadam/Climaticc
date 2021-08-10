@@ -1,6 +1,6 @@
-# climaticc
+# Climaticc
 
-A new Flutter project.
+A Simple Weather Application
 
 ## Getting Started
 
