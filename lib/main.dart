@@ -1,3 +1,4 @@
+import 'package:climaticc/screens/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:climaticc/screens/home.dart';
 import 'package:flutter/services.dart';
@@ -33,7 +34,7 @@ class _splashScreenState extends State<splashScreen> {
     Timer(
         Duration(seconds: 2),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => home())));
+            context, MaterialPageRoute(builder: (context) => loading())));
   }
 
   @override
