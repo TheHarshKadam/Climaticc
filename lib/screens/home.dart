@@ -35,11 +35,13 @@ class _homeState extends State<home> {
 
   AppBar myAppBar() {
     return AppBar(
+      // title: Text('Climaticc'),
+      // centerTitle: true,
       leading: IconButton(
         highlightColor: Colors.transparent,
         splashRadius: 27.0,
         icon: Icon(
-          Icons.near_me,
+          Icons.my_location_rounded,
           color: Colors.white,
         ),
         onPressed: () async {
@@ -52,7 +54,7 @@ class _homeState extends State<home> {
             highlightColor: Colors.transparent,
             splashRadius: 27.0,
             icon: Icon(
-              Icons.my_location_rounded,
+              Icons.search_rounded,
               color: Colors.white,
             ),
             onPressed: () async {
