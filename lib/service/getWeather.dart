@@ -4,7 +4,7 @@ import 'package:climaticc/service/location.dart';
 import 'package:geolocator/geolocator.dart';
 
 
-const apiKey = '681bd9aba1e6308c5cddc42c6e66e21a';
+const apiKey = 'add-your-own-api-key';
 const weatherApiLink = 'https://api.openweathermap.org/data/2.5/weather';
 const myCity = 'Navi Mumbai';
 
