@@ -35,7 +35,7 @@ class Weather {
     currentLocation location = currentLocation();
     await location.getCurrentLocation();
     NetworkHelper networkHelper = NetworkHelper(
-        '$weatherApiLink?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey');
+        '$weatherApiLink?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
     var weatherData = await networkHelper.getData();
     return weatherData;
   }
