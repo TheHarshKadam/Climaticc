@@ -4,6 +4,7 @@ import 'package:climaticc/screens/home.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      builder: (context, widget) => ResponsiveWrapper.builder(
+              BouncingScrollWrapper.builder(context, widget!),
+              maxWidth: 1200,
+              minWidth: 450,
+              defaultScale: true,
+              breakpoints: [
+                ResponsiveBreakpoint.resize(450, name: MOBILE),
+                ResponsiveBreakpoint.autoScale(800, name: TABLET),
+                ResponsiveBreakpoint.autoScale(1000, name: TABLET),
+                ResponsiveBreakpoint.autoScale(1200, name: DESKTOP),
+                ResponsiveBreakpoint.autoScale(2460, name: "4K"),
+              ]),
       theme: ThemeData(
           scaffoldBackgroundColor: Color(0xFF121212),
           appBarTheme: AppBarTheme(color: Color(0xFF121212), elevation: 0),
