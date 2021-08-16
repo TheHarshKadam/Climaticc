@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:climaticc/service/getWeather.dart';
 import 'package:climaticc/screens/home.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:intl/intl.dart';
+
 
 class loading extends StatefulWidget {
   @override
@@ -17,7 +20,6 @@ class _loadingState extends State<loading> {
     getLocationWeather();
   }
 
-  @override
   void getLocationWeather() async {
     var weatherData = await Weather().myCityWeather();
     print(weatherData);
