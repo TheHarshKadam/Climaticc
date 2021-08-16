@@ -33,11 +33,19 @@ dependencies:
   http: ^0.13.3
   intl: ^0.17.0
   google_fonts: ^2.1.0
+  responsive_framework: ^0.1.4
+  double_back_to_close_app: ^2.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "any"
 
+flutter_icons:
+  image_path: "assets/icon.png" 
+  android: true
+  ios: true
+  
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
