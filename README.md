@@ -2,7 +2,18 @@
 
 A Simple Weather Application
 
-<img src =  "https://user-images.githubusercontent.com/77354987/129730251-fe56825a-3271-4306-afd3-a0986de3ea52.gif" alt = "DEMO" width="350" height="730"    >
+<img src =  "https://user-images.githubusercontent.com/77354987/129730251-fe56825a-3271-4306-afd3-a0986de3ea52.gif" alt = "DEMO" width="350" height="730">
+
+## API Used 
+[Open Weather](https://openweathermap.org/api)
+
+- You need to use your own api key from [Open Weather](https://openweathermap.org/api)
+
+Just replace the following code in ```lib/service/getWeather.dart``` with your API Key 
+
+```
+const apiKey = 'add-your-own-api-key';
+```
 
 ## Get Started
 
